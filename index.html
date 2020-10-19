@@ -22,28 +22,27 @@
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Font Awesome Icons -->
-	<link href="assets/css/font-awesome/css/all.min.css" rel="stylesheet">
-	<script src="assets/js/allfontawesome.min.js"></script>
+	<!-- <link href="assets/css/font-awesome/css/all.min.css" rel="stylesheet">
+	<script src="assets/js/allfontawesome.min.js"></script> -->
+	<script src="https://kit.fontawesome.com/0b6c353423.js" crossorigin="anonymous"></script>
 	<!-- Custom CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link href="assets/css/custom.css" rel="stylesheet">
-	<link href="assets/css/themify-icons.css" rel="stylesheet">
+
 	<link href="assets/css/customsas.css" rel="stylesheet">
 
-	<link href="https://unpkg.com/@glidejs/glide@3.3.0/dist/css/glide.core.min.css" rel="stylesheet">
+
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/css/glide.theme.min.css" rel="stylesheet">
+
 
 	<!-- Google Fonts -->
 
 	<link
-		href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,800;1,900&family=Quicksand:wght@400;500;600;700&family=Roboto+Slab:wght@900&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 		rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-	<!-- Add the slick-theme.css if you want default styling -->
-	<link rel="stylesheet" type="text/css"
-		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
 </head>
 
 <body class="body">
@@ -54,117 +53,672 @@
 		<div class="header-t">
 			<div class="container d-flex">
 				<div class="cart">
-					<img src="assets/img/shopping-cart.svg">
-					Giỏ hàng:
-					<span>0</span>
-
+					<a href="cart.html"><img src="assets/img/shopping-cart.svg">
+						Giỏ hàng:
+						<span>0</span>
+					</a>
 				</div>
 			</div>
 		</div>
-		<div class="header-b">
+		<div class="header-b" id="myHeader">
 
 			<div class="navbar">
 				<div class="container">
 					<div class="logo">
 						<a href="index.html"><img src="assets/img/logo.svg"></a>
 					</div>
-					<nav>
-						<ul>
-							<li><a href="index.html">Trang chủ</a></li>
-							<li><a href="index.html">Xem số</a></li>
-							<li><a href="index.html">Sản phẩm</a></li>
-							<li><a href="index.html">Tin phong thủy</a></li>
-							<li><a href="index.html">Tin từ thiện</a></li>
-							<li><a href="index.html">Liên hệ</a></li>
+					<nav id="mytopNav" class="topnav">
+						<ul class="nav-sec">
+							<li class="nav-item"><a class="active" href="index.html">Trang chủ</a></li>
+							<li class="nav-item"><a href="number.html">Xem số</a></li>
+							<li class="nav-item"><a href="product.html">Sản phẩm</a></li>
+							<li class="nav-item"><a href="newspt.html">Tin phong thủy</a></li>
+							<li class="nav-item"><a href="newstt.html">Tin từ thiện</a></li>
+							<li class="nav-item"><a href="contact.html">Liên hệ</a></li>
 						</ul>
+						<svg viewBox="0 0 12 10" class="hamburger" height="100px" width="120px">
+							<path d="M10,2 L2,2" class="upper"
+								style="fill: none;stroke: #FFD164;stroke-linecap: round;" />
+							<path d="M2,5 L10,5" class="middle"
+								style="fill: none;stroke: #FFD164;stroke-linecap: round;" />
+							<path d="M10,8 L2,8" class="lower"
+								style="fill: none;stroke: #FFD164;stroke-linecap: round;" />
+						</svg>
 					</nav>
 				</div>
 			</div>
-			<div class="banner-hero">
-				<img src="assets/img/banner1.png">
+		</div>
+		<div class="banner-hero swiper-container swiper-hero ">
+			<div class="swiper-wrapper ">
+				<div class="swiper-slide">
+					<div class="banner-item">
+						<img src="assets/img/banner1.png">
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="banner-item">
+						<img src="assets/img/banner2.png">
+					</div>
+				</div>
+
 			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
 		</div>
 
-		</nav>
+
+
 
 
 	</header>
 
 	<!-- BODY
 			================================================== -->
-	<section class="about pad-s">
+	<section class="about-sec pad-s">
 		<div class="container">
-			<div class="title">
-				<h1>Nhân số học <span>là gì?</span></h1>
+			<div class="title-h">
+				<h1>Nhân số học <span class="color-span">là gì?</span></h1>
+				<p><img src="assets/img/title-b.png"></p>
 			</div>
-			
-			<div class="row">
-			<div class="col-md-7">
-				<div class="des">
-					<p>
-						<trong>Thần số học (Numerology) là việc nghiên cứu ý nghĩa của các con số và ảnh hưởng của nó
-							tới cuộc sống của con người. Từ “ Thần số học ” bắt nguồn từ từ “numerus” trong tiếng La
-							tinh nghĩa là con số, và từ “logos” trong tiếng Hy Lạp nghĩa là ngôn từ, tư tưởng và cảm
-							xúc.</trong>
-					</p>
-					<p> Người theo thuyết Thần số học tin rằng những con số đã thể hiện những điều đã được định hình
-						ngay từ khi chúng ta sinh ra, những điều chúng ta cần phải học hỏi và những thử thách mà chúng
-						ta có thể gặp phải. Có thể nói Thần số học là một cái gương phản chiếu hành trình cuộc đời của
-						một người dưới dạng các con số.</p>
-				</div>
 
-			</div>
-			<div class="col-md-5 search-number">
-				
-					<a class="btn-search" href="/xem-so.html"><img src="assets/img/magnifying-glass.svg">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="des">
+						<p>
+							<strong>Thần số học (Numerology) là việc nghiên cứu ý nghĩa của các con số và ảnh hưởng của
+								nó
+								tới cuộc sống của con người. Từ “ Thần số học ” bắt nguồn từ từ “numerus” trong tiếng La
+								tinh nghĩa là con số, và từ “logos” trong tiếng Hy Lạp nghĩa là ngôn từ, tư tưởng và cảm
+								xúc.</strong>
+						</p>
+						<p> Người theo thuyết Thần số học tin rằng những con số đã thể hiện những điều đã được định hình
+							ngay từ khi chúng ta sinh ra, những điều chúng ta cần phải học hỏi và những thử thách mà
+							chúng
+							ta có thể gặp phải. Có thể nói Thần số học là một cái gương phản chiếu hành trình cuộc đời
+							của
+							một người dưới dạng các con số.</p>
+					</div>
+
+				</div>
+				<div class="col-md-5 search-number">
+
+					<a class="btn-search" href="/number.html"><img src="assets/img/magnifying-glass.svg">
 						LÝ GIẢI CON SỐ
 					</a>
-				
+
+				</div>
 			</div>
 		</div>
-	</div>
 
 
 	</section>
-	<section class="news-new pad-s"> 
+	<section class="news-new-sec pad-s">
 		<div class="container">
-		<div class="title">
-			<h1>Bài viết <span>mới nhất</span></h1>
-		</div>
-		<div class="news-box">
-			<div class="row">
-			<div class="col-md-4">
-			<div class="single-box">
-				<div class="img-sec">
-					<img class="img-m" src="/assets/img/news1.png" alt="">
-				</div>
-				<div class="container-p">
-				<div class="title">
-					<h3>Nguyên tắc bố trí sofa ôm trọn tài lộc, tôi làm sai 80%</h3>
-				</div>
-				<div class="time-p">
-					03/10/2020
-				</div>
-				<div class="des-p">
-					Vấn đề tâm linh là một trong những vấn đề được rất nhiều người quan tâm. Vòng tay phong thủy cũng được đại diện cho vấn đề tâm linh đó
+			<div class="title-h">
+				<h1>Bài viết <span class="color-span">mới nhất</span></h1>
+				<p><img src="assets/img/title-b.png"></p>
+			</div>
+
+
+			<div class="news-box swiper-slide">
+				<div class="row">
+					<div class=" swiper-container swiper-news">
+						<div class="swiper-wrapper">
+							<div class="col-md-4 swiper-slide">
+								<div class="single-box">
+									<div class="img-sec">
+										<a href="news-detail.html"><img class="img-m" src="/assets/img/news1.png"
+												alt=""></a>
+									</div>
+									<div class="container-p">
+										<div class="title">
+											<h4><a href="news-detail.html">Nguyên tắc bố trí sofa ôm trọn tài lộc, tôi
+													làm sai 80%</a></h4>
+										</div>
+										<div class="time-p">
+											<span>03/10/2020</span>
+
+										</div>
+										<div class="des-p">
+											Vấn đề tâm linh là một trong những vấn đề được rất nhiều người quan tâm.
+											Vòng tay phong thủy cũng được đại diện cho vấn đề tâm linh đó
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-md-4 swiper-slide">
+								<div class="single-box">
+									<div class="img-sec">
+										<a href="news-detail.html"><img class="img-m" src="/assets/img/news2.png"
+												alt=""></a>
+									</div>
+									<div class="container-p">
+										<div class="title">
+											<h4><a href="news-detail.html">Sách, giáo dục và người</a></h4>
+										</div>
+										<div class="time-p">
+											<span>03/10/2020</span>
+
+										</div>
+										<div class="des-p">
+											Vấn đề tâm linh là một trong những vấn đề được rất nhiều người quan tâm.
+											Vòng tay phong thủy cũng được đại diện cho vấn đề tâm linh đó
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-md-4 swiper-slide">
+								<div class="single-box">
+									<div class="img-sec">
+										<a href="news-detail.html"><img class="img-m" src="/assets/img/news3.png"
+												alt=""></a>
+									</div>
+									<div class="container-p">
+										<div class="title">
+											<h4><a href="news-detail.html">Hơn 400.000 thuê bao chưa thể chuyển mạng giữ
+													số</a></h4>
+										</div>
+										<div class="time-p">
+											<span>03/10/2020</span>
+
+										</div>
+										<div class="des-p">
+											Vấn đề tâm linh là một trong những vấn đề được rất nhiều người quan tâm.
+											Vòng tay phong thủy cũng được đại diện cho vấn đề tâm linh đó
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-md-4 swiper-slide">
+								<div class="single-box">
+									<div class="img-sec">
+										<a href="news-detail.html"><img class="img-m" src="/assets/img/news1.png"
+												alt=""></a>
+									</div>
+									<div class="container-p">
+										<div class="title">
+											<h4><a href="news-detail.html">Nguyên tắc bố trí sofa ôm trọn tài lộc, tôi
+													làm sai 80%</a></h4>
+										</div>
+										<div class="time-p">
+											<span>03/10/2020</span>
+
+										</div>
+										<div class="des-p">
+											Vấn đề tâm linh là một trong những vấn đề được rất nhiều người quan tâm.
+											Vòng tay phong thủy cũng được đại diện cho vấn đề tâm linh đó
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+
 				</div>
 			</div>
 
+
+		</div>
+
+		</div>
+		</div>
+	</section>
+	<section class="news-pt-sec pad-s">
+		<div class="container">
+			<div class="title-h">
+				<h1>Tin <span class="color-span">phong thủy</span></h1>
+				<p><img src="assets/img/title-b.png"></p>
 			</div>
+
+			<div class="box-pt">
+				<div class="row">
+					<div class="col-md-6 left-box">
+						<div class="row">
+							<div class="col-md-6 col-6">
+								<div class="single-box">
+									<div class="img-sec">
+										<a href="news-detail.html"><img class="img-m" src="/assets/img/news1.png"
+												alt=""></a>
+									</div>
+									<div class="container-p">
+										<div class="title">
+											<h4><a href="news-detail.html">Khúc tráng ca của Jurgen Klopp ở
+													Liverpool</a></h4>
+										</div>
+										<div class="time-p">
+											03/10/2020
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-6">
+								<div class="single-box">
+									<div class="img-sec">
+										<a href="news-detail.html"><img class="img-m" src="/assets/img/news2.png"
+												alt=""></a>
+									</div>
+									<div class="container-p">
+										<div class="title">
+											<h4><a href="news-detail.html">Nguyên tắc bố trí sofa ôm trọn tài lộc, tôi
+													làm sai 80%, còn bạn? ôm trọn tài lộc</a></h4>
+										</div>
+										<div class="time-p">
+											03/10/2020
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-6">
+								<div class="single-box">
+									<div class="img-sec">
+										<a href="news-detail.html"><img class="img-m" src="/assets/img/news1.png"
+												alt=""></a>
+									</div>
+									<div class="container-p">
+										<div class="title">
+											<h4><a href="news-detail.html">Khúc tráng ca của Jurgen Klopp ở
+													Liverpool</a></h4>
+										</div>
+										<div class="time-p">
+											03/10/2020
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-6">
+								<div class="single-box">
+									<div class="img-sec">
+										<a href="news-detail.html"><img class="img-m" src="/assets/img/news3.png"
+												alt=""></a>
+									</div>
+									<div class="container-p">
+										<div class="title">
+											<h4><a href="news-detail.html">Nguyên tắc bố trí sofa ôm trọn tài lộc, tôi
+													làm sai 80%</a></h4>
+										</div>
+										<div class="time-p">
+											03/10/2020
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 right-box">
+						<div class="single-box">
+							<div class="img-sec">
+								<a href="news-detail.html"><img class="img-m" src="/assets/img/news2.png" alt=""></a>
+							</div>
+							<div class="container-p">
+								<div class="title">
+									<h4><a href="news-detail.html">Nguyên tắc bố trí sofa ôm trọn tài lộc, tôi làm sai
+											80%</a></h4>
+								</div>
+								<div class="time-p">
+									03/10/2020
+								</div>
+								<div class="des-p">
+									Vấn đề tâm linh là một trong những vấn đề được rất nhiều người quan tâm. Vòng tay
+									phong thủy cũng được đại diện cho vấn đề tâm linh đó
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			
-			
-	</div>
-	</div>
-	</div>
+			<div class="seemore"><a href="newspt.html" class="btn-more">XEM THÊM</a></div>
+		</div>
+
+	</section>
+	<section class="news-tt-sec pad-s">
+		<div class="container">
+			<div class="title-h">
+				<h1>Tin <span class="color-span">từ thiện</span></h1>
+				<p><img src="assets/img/title-b.png"></p>
+			</div>
+			<div class="big-news">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="single-box">
+							<div class="img-sec">
+								<img class="img-m" src="/assets/img/news4.png" alt=""></a>
+							</div>
+							<div class="container-p">
+								<div class="title">
+									<h4><a href="news-detail.html">Nguyên tắc bố trí sofa ôm trọn tài lộc, tôi làm sai
+											80%</a></h4>
+								</div>
+								<div class="time-p">
+									03/10/2020
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="single-box">
+							<div class="img-sec">
+								<a href="news-detail.html"><img class="img-m" src="/assets/img/news5.png" alt=""></a>
+							</div>
+							<div class="container-p">
+								<div class="title">
+									<h4><a href="news-detail.html">Nguyên tắc bố trí sofa ôm trọn tài lộc, tôi làm sai
+											80%</a></h4>
+								</div>
+								<div class="time-p">
+									03/10/2020
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="small-news">
+				<div class="row">
+					<div class="col-md-3 col-6">
+						<div class="single-box">
+							<div class="img-sec">
+								<a href="news-detail.html"><img class="img-m" src="/assets/img/news3.png" alt=""></a>
+							</div>
+							<div class="container-p">
+								<div class="title">
+									<h4><a href="news-detail.html"> Nguyên tắc bố trí sofa ôm trọn tài lộc, tôi làm sai
+											80%</a></h4>
+								</div>
+								<div class="time-p">
+									03/10/2020
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-6">
+						<div class="single-box">
+							<div class="img-sec">
+								<a href="news-detail.html"><img class="img-m" src="/assets/img/news3.png" alt=""></a>
+							</div>
+							<div class="container-p">
+								<div class="title">
+									<h4><a href="news-detail.html">Nguyên tắc bố trí sofa ôm trọn tài lộc, tôi làm sai
+											80%</a></h4>
+								</div>
+								<div class="time-p">
+									03/10/2020
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-6">
+						<div class="single-box">
+							<div class="img-sec">
+								<a href="news-detail.html"><img class="img-m" src="/assets/img/news2.png" alt=""></a>
+							</div>
+							<div class="container-p">
+								<div class="title">
+									<h4><a href="news-detail.html">Nguyên tắc bố trí sofa ôm trọn tài lộc, tôi làm sai
+											80%</a></h4>
+								</div>
+								<div class="time-p">
+									03/10/2020
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-6">
+						<div class="single-box">
+							<div class="img-sec">
+								<a href="news-detail.html"><img class="img-m" src="/assets/img/news4.png" alt=""></a>
+							</div>
+							<div class="container-p">
+								<div class="title">
+									<h4><a href="news-detail.html">Nguyên tắc bố trí sofa ôm trọn tài lộc, tôi làm sai
+											80%</a></h4>
+								</div>
+								<div class="time-p">
+									03/10/2020
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="seemore"><a href="newstt.html" class="btn-more">XEM THÊM</a></div>
+		</div>
+
+
+	</section>
+	<section class="product-sec pad-s">
+		<div class="container">
+			<div class="title-h">
+				<h1>Sản phẩm <span class="color-span">số học</span></h1>
+				<p><img src="assets/img/title-b.png"></p>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-6">
+					<div class="box-product">
+						<div class="img-p">
+							<a href="product-detail.html"><img class="img-m" src="assets/img/product3.png"></a>
+						</div>
+						<div class="info">
+							<div class="title">
+								<h4><a href="product-detail.html">Vòng tay chỉ đỏ mix heo vàng</a></h4>
+							</div>
+							<div class="price">
+								300,00đ<span class="sale">500.00đ</span>
+							</div>
+							<div class="cta">
+								<div class="cta-cs cta-cta"><a data-toggle="modal" data-target="#modal"
+										class="btn-cta btn-cs">TƯ VẤN</a></div>
+								<div class="cta-buy cta-cta"><a href="cart.html" class="btn-cta btn-buy">MUA NGAY</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-6">
+					<div class="box-product">
+						<div class="img-p">
+							<a href="product-detail.html"><img class="img-m" src="assets/img/product2.png"></a>
+						</div>
+						<div class="info">
+							<div class="title">
+								<h4><a href="product-detail.html">Vòng tay chỉ đỏ mix heo vàng</a></h4>
+							</div>
+							<div class="price">
+								300,00đ
+							</div>
+							<div class="cta">
+								<div class="cta-cs cta-cta"><a data-toggle="modal" data-target="#modal"
+										class="btn-cta btn-cs">TƯ VẤN</a></div>
+								<div class="cta-buy cta-cta"><a href="cart.html" class="btn-cta btn-buy">MUA NGAY</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-6">
+					<div class="box-product">
+						<div class="img-p">
+							<a href="product-detail.html"><img class="img-m" src="assets/img/product1.png"></a>
+						</div>
+						<div class="info">
+							<div class="title">
+								<h4><a href="product-detail.html">Vòng tay chỉ đỏ mix heo vàng</a></h4>
+							</div>
+							<div class="price">
+								300,00đ
+							</div>
+							<div class="cta">
+								<div class="cta-cs cta-cta"><a data-toggle="modal" data-target="#modal"
+										class="btn-cta btn-cs">TƯ VẤN</a></div>
+								<div class="cta-buy cta-cta"><a href="cart.html" class="btn-cta btn-buy">MUA NGAY</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-6">
+					<div class="box-product">
+						<div class="img-p">
+							<a href="product-detail.html"><img class="img-m" src="assets/img/product1.png"></a>
+						</div>
+						<div class="info">
+							<div class="title">
+								<h4><a href="product-detail.html">Vòng tay chỉ đỏ mix heo vàng</a></h4>
+							</div>
+							<div class="price">
+								300,00đ
+							</div>
+							<div class="cta">
+								<div class="cta-cs cta-cta"><a data-toggle="modal" data-target="#modal"
+										class="btn-cta btn-cs">TƯ VẤN</a></div>
+								<div class="cta-buy cta-cta"><a href="cart.html" class="btn-cta btn-buy">MUA NGAY</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-6">
+					<div class="box-product">
+						<div class="img-p">
+							<a href="product-detail.html"><img class="img-m" src="assets/img/product2.png"></a>
+						</div>
+						<div class="info">
+							<div class="title">
+								<h4><a href="product-detail.html">Vòng tay chỉ đỏ mix heo vàng</a></h4>
+							</div>
+							<div class="price">
+								300,00đ
+							</div>
+							<div class="cta">
+								<div class="cta-cs cta-cta"><a data-toggle="modal" data-target="#modal"
+										class="btn-cta btn-cs">TƯ VẤN</a></div>
+								<div class="cta-buy cta-cta"><a href="cart.html" class="btn-cta btn-buy">MUA NGAY</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-6">
+					<div class="box-product">
+						<div class="img-p">
+							<a href="product-detail.html"><img class="img-m" src="assets/img/product1.png"></a>
+						</div>
+						<div class="info">
+							<div class="title">
+								<h4><a href="product-detail.html">Vòng tay chỉ đỏ mix heo vàng</a></h4>
+							</div>
+							<div class="price">
+								300,00đ
+							</div>
+							<div class="cta">
+								<div class="cta-cs cta-cta"><a data-toggle="modal" data-target="#modal"
+										class="btn-cta btn-cs">TƯ VẤN</a></div>
+								<div class="cta-buy cta-cta"><a href="" class="btn-cta btn-buy">MUA NGAY</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="seemore"><a href="product.html" class="btn-more">XEM THÊM</a></div> -->
+		</div>
 	</section>
 
+	<!-- modal -->
+	<div class="modal fade mo-consul" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal_consul" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<h4>VUI LÒNG ĐIỀN ĐẦY ĐỦ THÔNG TIN ĐỂ NHẬN HỔ TRỢ NHANH NHẤT</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form >
+						<div class="form-group">
+							<input class="item-ip" type="text" placeholder="Họ và tên">
+						</div>
+						<div class="form-group">
+							<input class="item-ip" type="text" placeholder="Số điện thoại">
+						</div>
+						<button class="submit-ip" type="button" >YÊU CẦU TƯ VẤN</button>
+					</form>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
 
 
 	<!-- FOOTER
 ================================================== -->
 	<footer>
+		<div class="container top-f">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="logo-f">
+						<img src="assets/img/logo.svg" alt="">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="info-f">
+						<div class="head-f">
+							HỖ TRỢ
+						</div>
+						<div class="menu-f">
+							<ul>
+								<li><a href="number.html">Xem số</a></li>
+								<li><a href="product.html">Sản phẩm</a></li>
+								<li><a href="newspt.html">Tin phong thủy</a></li>
+								<li><a href="newstt.html">Tin từ thiện</a></li>
+								<li><a href="contact.html">Liên hệ</a></li>
 
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="info-f">
+						<div class="head-f">
+							LIÊN HỆ
+						</div>
+						<div class="menu-f contact-f">
+							<ul>
+								<li><i class="fas fa-map-marker-alt"></i> Số 8, Ngõ 57/80 Mễ Trì, Nam Từ Liêm, Hồ Chí
+									Minh</li>
+								<li><i class="fas fa-phone"></i>0948 558 6754</li>
+								<li><i class="fas fa-envelope"></i>sohoc@gmail.com</a></li>
+								<li><i class="fab fa-facebook-f"></i>sohoc</li>
+
+
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-f">
+			Copyright 2020 © Sohoc
+		</div>
 	</footer>
 
 	<!-- Bootstrap core JavaScript
@@ -173,9 +727,12 @@
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery-3.5.1.slim.min.js"></script> -->
 	<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="https://unpkg.com/@glidejs/glide@3.3.0/dist/glide.min.js"></script>
-
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/cardPr.js"></script>
+	
 </body>
 
 </html>

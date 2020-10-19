@@ -2,7 +2,7 @@
 
 body {
 	/*margin-top: 50px;*/
-	font-family: 'quick-sand', Helvetica, sans-serif;
+
 	font-size: 1em;
 
 	
@@ -13,323 +13,27 @@ body {
 h1,h2,h3,h4,h5,h6 {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
-  font-weight: bold;
-  font-size: 3em;
+  
 }
 
-h1 {
 
-	line-height: 1.4 !important;
-	font-weight: 900!important;
 
-}
-h1,h2,h3{
-	font-family: 'Playfair Display', serif;
-}
 
 
 /* ==== MEDIA QUERIES ==== */
 @media screen and (min-width : 1024px)  {
-	.navbar .btn-login{
-	margin-left: 2em;
-}
+
 }
 @media screen and (max-width : 991px) {
 
-.navbar-light .navbar-nav .active .nav-link{
-	color: #FFE66D;
-}
-.navbar-light .navbar-nav .nav-link:before{
-  content: "";
-  
-
-}
-.b-read__wrap {
-  width: 768px;
-}
-.b-read__wrap img{
-
-  min-width: 728px;
-  left:-80px;
-}
 }
 
 @media screen and (max-width : 768px) {
-  .b-sticky-share__wrap{
-    display: none;
-  }
-  .detailView .b-hero{
-    height: auto;
-    min-height: 600px;
-  }
-  
-  .content-list .postslide .imgContainer, #life .imgContainer{
-    flex: 0 0 8em !important;
-  }
-  .content-list .postslide .imgContainer img{
-    border: 8px solid #bcc8bf1f !important;
-  }
-  
-  
-  .list-view .banner_hero h1 {
-    font-size: 2.5em ;
-}
-  .b-nav-search_inner {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-  .navbar-brand{
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 66%;
-  }
-  .navbar{
-    padding: unset !important;
-  }
-  .navbar-toggler{
-    display: block;
-  }
-  .navbar-collapse{
-    order:5;
-  }
  
-  .b-nav-search_icon{
-    width: 40px;
-    height: 40px;
-    order:2;
-    margin-left: 30px;
-  }
-  .navbar-toggler{
-    order: 3;
-  }
-
-  .navbar-nav {
-    font-size: 1.5em;
-  }
-  .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
-    outline: none;
-  }
-  #hero{
-    margin-top: 80px !important;
-  }
-  #life .seeMore{
-    display: none;
-  }
-  .btn-mb{
-    display: block !important;
-    text-align: center;
-  }
-  .navbar-toggler{
-        padding: .75rem .75rem !important;
-        border-radius: 50% !important;
-        width: 50px;
-    height: 50px;
-  }
-  .btn-login{
-        padding: 0.6em 3em !important;
-    margin: 1em;
-  }
-  #newPost h1 :before{
-
-    left: 0.5em;
-  }
-  .header-top{
-    display: none;
-  }
-	.logo {
-		width: 50%;
-	}
-	.btn.btn-login{
-      margin-bottom: 50px;
-      width: 200px;
-}
-.navbar-light .navbar-nav .nav-link {
-    
-    padding: 1rem 0;	
-
-}
-#life .postslide{
-  padding: 0px;
-  margin-bottom: 2em;
-}
-#life .detailPost{
-  padding-top: 0;
-  padding: 1em;
-  flex: 0 0 50%;
-}
-#health .description,#life .description{
-    display: none;
-  }
-  .footer_top :before{
-    height: 221px !important;
-  }
-  .navbar-brand img{
-    width: 90px;
-  }
-  .navbar-nav{
-    align-items: center;
-}
-.btn-dk{
-  display: none !important;
-}
-.mb-display{
-display: block !important;
-}
-h3{
-  font-size: 1.2em !important;
-}
-.detailView .b-hero .b-post__hero-image{
-  background-attachment: scroll;
-}
 }
 @media screen and (max-width: 767px){
-.b-read__wrap img{
-    width: auto;
-    /* padding-right: 13vw;
-    padding-left: 13vw; */
-    
-}
+
 }
 @media screen and (max-width : 568px) {
-  .b-nav-search_icon{
-    margin-left: 0;
-  }
-  
-  section {
-    margin-bottom: 4em;
-}
-  #newPost .container .row .col-sm-4:last-child .postslide{
-    margin-top: 40px;
-    display: flex;
-    max-width: 100%;
-  }
-  #newPost .container .row .col-sm-4:last-child .postslide .description{
-    display: none;
-  }
-  #newPost .title-left:before{
-    display: none;
-  }
-  #newPost .title-left{
-    margin-top: 0;
-  }
  
-  b-post__hero-thumbnail{
-    margin-bottom: 1em;
-  }
-  .b-post-bottom__author {
-   
-    flex-direction: column;
-    text-align: center;
-}
-  .b-read__wrap img{
-    left: -10%;
-    
-      min-width: 120%;
-  }
-  .b-read__wrap {
-  
-    padding-right: 8vw;
-    padding-left: 8vw;
-}
-  .b-post__details-wrap-cell{
-    box-shadow: none;
-    margin-bottom: 1em;
-  }
-  .b-post__details-wrap{
-    display: block;
-  }
-  .b-post__hero-inner .description{
-    font-size: 1.2em;
-  }
-  .detailView .b-hero .b-post__hero-image .b-post__hero-wrap{
-    padding: 1em;
-  }
-  .detailView .b-hero{
-    padding: 0;
-  }
-  .b-post__hero-inner h1{
-    font-size: 1.7em;
-    line-height: 1.5em;
-  }
-
-  .detailPost{
-    padding: 0 1em 2em 1em;
-  }
-  .TopImage,.banner_hero{
-    -webkit-box-flex: unset !important;
-    -ms-flex: unset !important;
-    flex: unset !important;
-  }
-  .list-view .listTop{
-    flex-wrap: wrap;
-  }
-  
-.btn-login.btn-dk{
-  display: none;
-}
-.mb-display{
-display: block;
-}
-  .quote_text{
-    font-size: 1.1em;
-  }
-  .health-banner{
-        margin-bottom: 1.8em;
-  }
-  #review h1 :before,#health h1 :before, #newPost h1 :before,#life .inner-header:before,#recipe .container:before{
-    display: none;
-  }
-  .form-footer {
-    padding: 3em 1em;
-}
-
-  
- 
- 
-  #recipe:before{
-      top: -3%;
-    right: -35%;
-    left: unset;
-  }
-  .footer_top :before{
-    display: none;
-    top:-100;
-   background-size: 209px;
-    width: 209px;
-  }
-  #recipe :before{
-        top: 0;
-    left: 154px;
-  }
-  #recipe .postslide{
-    padding: 0 0 2em 0;
-  }
-  footer:before{
-
-  background:unset;
-  
-}
-.footer_top:before{
-  background-size: 200px;
-  width: 200px;
-}
-  footer .lead :before{
-    display: none;
-  }
-	#health .imgContainer{
-    height: auto;
-  }
-  
-  #health .col-sm-4:first-child .description{
-    display: block;
-  }
-  #health .postslide{
-    margin-bottom: 1em;
-  }
-  #newPost .swiper-wrapper{
-  left: unset;
-}
- #newPost  .swiper-slide{
-  max-width: 100%;
- }
 }
