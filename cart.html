@@ -58,7 +58,7 @@
 				<div class="cart">
 					<a href="cart.html"><img src="assets/img/shopping-cart.svg">
 						Giỏ hàng:
-						<span>0</span>
+						<span>2</span>
 					</a>
 				</div>
 			</div>
@@ -73,7 +73,7 @@
 					<nav id="mytopNav" class="topnav">
 						<ul class="nav-sec">
 							<li class="nav-item"><a  href="index.html">Trang chủ</a></li>
-							<li class="nav-item"><a class="active"  href="number.html">Xem số</a></li>
+							<li class="nav-item"><a   href="number.html">Xem số</a></li>
 							<li class="nav-item"><a href="product.html">Sản phẩm</a></li>
 							<li class="nav-item"><a href="newspt.html">Tin phong thủy</a></li>
 							<li class="nav-item"><a href="newstt.html">Tin từ thiện</a></li>
@@ -106,26 +106,135 @@
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Xem số</li>
+					<li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
 				</ol>
 			</nav>
 		</div>
 
 		<!-- Form 1 -->
-		<section class="p-number">
-			<div class="form-number">
-				<h2>XEM SỐ</h2>
-				<form class="flex-c">
+		<section class="p-cart">
+			<div class="container">
+				<div class="row">
 					
-					<div class="form-group">
-						<label for="fname">Nhập ngày tháng năm sinh của bạn</label>
-						<input class="item-numb" type="date" id="birthday-date" name=" Ngày tháng năm sinh" />
+					<div id="layout-page" class="col-md-12">
+						<h4 class="cart-h">GIỎ HÀNG</h4>
+						<form action="">
+							<table>
+								<thead>
+									<tr>
+										<th class="img-c">&nbsp;</th>
+										<th class="item">Tên sản phẩm</th>
+										<th class="qty">Số lượng</th>
+										<th class="price-c">Giá tiền</th>
+										<th class="remove">&nbsp</th>
+									</tr>
+
+								</thead>
+								<tbody>
+									<tr class="list-carts">
+										<td class="img-c">
+											<a href="product-detail.html">
+											<img src="assets/img/product1.png">
+										</a>
+									</td>
+										<td class="item">
+											<a href="product-detail.html">Vòng tay Trầm Dó mix Tỳ Hưu</a>
+										</td>
+										<td class="qty">
+											<input type="number" size="4"  min="1"  value="2"  class="tc item-quantity">
+										</td>
+										<td class="price-c">
+											22,500,000₫
+										</td>
+										<td class="remove">
+											<a href="">Xóa</a>
+										</td>
+
+									</tr>
+									<tr class="list-carts">
+										<td class="img-c">
+											<a href="product-detail.html">
+											<img src="assets/img/product3.png">
+										</a>
+									</td>
+										<td class="item">
+											<a href="product-detail.html">Vòng tay Trầm Indo bọc vàng 10k PLT</a>
+										</td>
+										<td class="qty">
+											<input type="number" size="4"  min="1"  value="2"  class="tc item-quantity">
+										</td>
+										<td class="price-c">
+											22,500,000₫
+										</td>
+										<td class="remove">
+											<a href="">Xóa</a>
+										</td>
+
+									</tr>
+									<tr class="list-carts">
+										<td class="img-c">
+											<a href="product-detail.html">
+											<img src="assets/img/product2.png">
+										</a>
+									</td>
+										<td class="item">
+											<a href="product-detail.html">Vòng tay trầm sánh trúc bọc vàng non, xoắn</a>
+										</td>
+										<td class="qty">
+											<input type="number" size="4"  min="1"  value="2"  class="tc item-quantity">
+										</td>
+										<td class="price-c">
+											22,500,000₫
+										</td>
+										<td class="remove">
+											<a href="">Xóa</a>
+										</td>
+
+									</tr>
+									<tr class="summary">
+										<td class="image">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td ><b>Tổng cộng:</b></td>
+									<td class="price">
+										<span class="total" id="total-carts">
+											<strong>27,300,000₫</strong>
+										</span>
+									</td>
+									<td>&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="row">
+							<div class="col-md-6">
+								<div class="note-c">
+									<label for="note">Ghi chú</label>
+									<br>
+									<textarea name="note" id="note" cols="35" rows="8"></textarea>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="cart-button">
+									<a href=""><button class="submit-numb btn-buy" type="button">CẬP NHẬT <i class="fas fa-angle-right"></i></button></a>
+									<a href="payment.html"><button class="submit-numb btn-buy" type="button">THANH TOÁN <i class="fas fa-angle-right"></i></button></a>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<a href="product.html">
+									<i class="fas fa-reply"></i>
+									Tiếp tục mua hàng
+								</a>
+							</div>
+						</div>
+						</form>
+
 						
 					</div>
-					<a href="numberDetail.html"><button class="submit-numb btn-buy" type="button">TIẾP TỤC <i class="fas fa-angle-right"></i></button></a>
-				</form>
+				</div>
+			
+			
+		</div>
 
-			</div>
+			
 
 
 		</section>
